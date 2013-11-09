@@ -1,0 +1,11 @@
+source "https://rubygems.org"
+
+gem "goliath"
+gem "grape"
+gem "grape-entity"
+
+gem "em-synchrony", require: ['em-synchrony', 'em-synchrony/mysql2', 'em-synchrony/activerecord']
+gem 'activerecord', "~> 4.0.1", require: 'active_record'
+gem 'mysql2'
+
+gem "foreman"

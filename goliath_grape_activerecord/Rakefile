@@ -1,0 +1,37 @@
+require "active_record"
+
+ENV["RACK_ENV"] ||= "development"
+
+namespace :db do
+  desc 'Creates the database'
+  task :create do
+    config  = database.dup
+    db_name = config.delete("database")
+
+    ActiveRecord::Base.establish_connection config
+    ActiveRecord::Base.connection.create_database db_name
+  end
+
+  desc 'Drops the database'
+  task :drop do
+    config  = database.dup
+    db_name = config.delete("database")
+
+    ActiveRecord::Base.establish_connection config
+    ActiveRecord::Base.connection.drop_database db_name
+  end
+
+  desc "migrate your database"
+  task :migrate => :config do
+    ActiveRecord::Base.establish_connection database
+
+    ActiveRecord::Migrator.migrate(
+      ActiveRecord::Migrator.migrations_paths,
+      ENV["VERSION"] ? ENV["VERSION"].to_i : nil
+    )
+  end
+end
+
+def database
+  YAML::load(File.open('config/database.yml'))[ENV["RACK_ENV"]]
+end

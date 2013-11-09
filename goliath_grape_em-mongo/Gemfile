@@ -1,0 +1,11 @@
+source "https://rubygems.org"
+
+gem "goliath"
+gem "grape"
+gem "grape-entity"
+
+gem "em-synchrony", require: ["em-synchrony", "em-synchrony/em-mongo"]
+gem "em-mongo"
+gem "bson_ext"
+
+gem "foreman"

@@ -1,0 +1,26 @@
+development:
+  host: localhost
+  adapter: mysql2
+  database: puma_rails_activerecord
+  pool: 20
+  timeout: 5000
+  username: root
+  password:
+
+testing:
+  host: localhost
+  adapter: mysql2
+  database: puma_rails_activerecord
+  pool: 20
+  timeout: 5000
+  username: root
+  password:
+
+production:
+  host: localhost
+  adapter: mysql2
+  database: puma_rails_activerecord
+  pool: 200
+  timeout: 5000
+  username: root
+  password:

@@ -1,0 +1,29 @@
+development:
+  sessions:
+    default:
+      database: puma_rails_mongoid
+      hosts:
+        - localhost:27017
+      options:
+        pool_size:
+          20
+
+testing:
+  sessions:
+    default:
+      database: puma_rails_mongoid
+      hosts:
+        - localhost:27017
+      options:
+        pool_size:
+          20
+
+production:
+  sessions:
+    default:
+      database: puma_rails_mongoid
+      hosts:
+        - localhost:27017
+      options:
+        pool_size:
+          20

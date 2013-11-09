@@ -1,0 +1,29 @@
+development:
+  adapter: em_mysql2
+  encoding: utf8
+  database: goliath_grape_activerecord
+  pool: 20
+  reconnect: false
+  username: root
+  password:
+  socket: /tmp/mysql.sock
+
+testing:
+  adapter: em_mysql2
+  encoding: utf8
+  database: goliath_grape_activerecord
+  pool: 20
+  reconnect: false
+  username: root
+  password:
+  socket: /tmp/mysql.sock
+
+production:
+  adapter: em_mysql2
+  encoding: utf8
+  database: goliath_grape_activerecord
+  pool: 20
+  reconnect: false
+  username: root
+  password:
+  socket: /tmp/mysql.sock

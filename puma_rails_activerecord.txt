@@ -1,0 +1,157 @@
+winston@kakashi ~ $ ab -n 500 -c 20 http://localhost:9292/posts/151
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)
+Completed 100 requests
+Completed 200 requests
+Completed 300 requests
+Completed 400 requests
+Completed 500 requests
+Finished 500 requests
+
+
+Server Software:
+Server Hostname:        localhost
+Server Port:            9292
+
+Document Path:          /posts/151
+Document Length:        565 bytes
+
+Concurrency Level:      20
+Time taken for tests:   0.579 seconds
+Complete requests:      500
+Failed requests:        0
+Write errors:           0
+Total transferred:      411500 bytes
+HTML transferred:       282500 bytes
+Requests per second:    864.21 [#/sec] (mean)
+Time per request:       23.143 [ms] (mean)
+Time per request:       1.157 [ms] (mean, across all concurrent requests)
+Transfer rate:          694.58 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:     2   23  23.6     16     135
+Waiting:        2   17  19.5     13     127
+Total:          2   23  23.6     16     136
+
+Percentage of the requests served within a certain time (ms)
+  50%     16
+  66%     25
+  75%     28
+  80%     29
+  90%     51
+  95%     62
+  98%    132
+  99%    135
+ 100%    136 (longest request)
+
+---
+
+winston@kakashi ~ $ ab -n 500 -c 20 http://localhost:9292/posts/151
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)
+Completed 100 requests
+Completed 200 requests
+Completed 300 requests
+Completed 400 requests
+Completed 500 requests
+Finished 500 requests
+
+
+Server Software:
+Server Hostname:        localhost
+Server Port:            9292
+
+Document Path:          /posts/151
+Document Length:        565 bytes
+
+Concurrency Level:      20
+Time taken for tests:   0.493 seconds
+Complete requests:      500
+Failed requests:        0
+Write errors:           0
+Total transferred:      411500 bytes
+HTML transferred:       282500 bytes
+Requests per second:    1013.52 [#/sec] (mean)
+Time per request:       19.733 [ms] (mean)
+Time per request:       0.987 [ms] (mean, across all concurrent requests)
+Transfer rate:          814.58 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:     2   19  12.1     17      61
+Waiting:        1   14   8.7     13      48
+Total:          2   19  12.1     17      61
+
+Percentage of the requests served within a certain time (ms)
+  50%     17
+  66%     21
+  75%     23
+  80%     24
+  90%     37
+  95%     50
+  98%     56
+  99%     59
+ 100%     61 (longest request)
+
+---
+
+winston@kakashi ~ $ ab -n 500 -c 20 http://localhost:9292/posts/151
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)
+Completed 100 requests
+Completed 200 requests
+Completed 300 requests
+Completed 400 requests
+Completed 500 requests
+Finished 500 requests
+
+
+Server Software:
+Server Hostname:        localhost
+Server Port:            9292
+
+Document Path:          /posts/151
+Document Length:        565 bytes
+
+Concurrency Level:      20
+Time taken for tests:   0.492 seconds
+Complete requests:      500
+Failed requests:        0
+Write errors:           0
+Total transferred:      412323 bytes
+HTML transferred:       283065 bytes
+Requests per second:    1016.92 [#/sec] (mean)
+Time per request:       19.667 [ms] (mean)
+Time per request:       0.983 [ms] (mean, across all concurrent requests)
+Transfer rate:          818.94 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:     2   19  10.8     18      54
+Waiting:        2   14   8.3     13      45
+Total:          2   19  10.8     18      54
+
+Percentage of the requests served within a certain time (ms)
+  50%     18
+  66%     21
+  75%     24
+  80%     25
+  90%     33
+  95%     46
+  98%     49
+  99%     50
+ 100%     54 (longest request)
+

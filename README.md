@@ -17,7 +17,7 @@ To run the apps, you will need to have `MySQL` and `mongodb` installed.
 
 ## Testing
 
-Go into any of the app. Start the app.
+Go into any of the app directory. Start the app.
 
     > foreman start
 
@@ -28,6 +28,10 @@ For each app, there are two endpoints:
 
     # This retrieves one record from the database.
     /posts/:id
+
+First, go to `<hostname:3000>/posts/test` to set up test data.
+
+Pick one of the generated records and use the second endpoint for the benchmark.
 
 I tested the app with:
 

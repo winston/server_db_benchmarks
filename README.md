@@ -4,9 +4,10 @@ Simple benchmark with various Server-DB combinations for retrieving one record:
 
 1. Goliath, Grape with MongoDB, using em-mongo
 2. Goliath, Grape with MongoDB, using mongoid
-3. Goliath, Grape with MySQL, using activerecord
-4. Puma, Rails, Grape with MongoDB, using mongoid
-5. Puma, Rails, Grape with MySQL, using activerecord
+3. Goliath, Grape with MongoDB, using moped
+4. Goliath, Grape with MySQL, using activerecord
+5. Puma, Rails, Grape with MongoDB, using mongoid
+6. Puma, Rails, Grape with MySQL, using activerecord
 
 ## Prequisite
 
